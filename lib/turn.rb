@@ -28,4 +28,17 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  the_move = gets.chomp
+  if the_move = 'q'
+    puts "quitting"
+    return false;
+  end
+  index = input_to_index(the_move)
+  if valid_move?(board,index)
+    puts "move made"
+    move(board,the_move);
+  else
+    puts "invalid move"
+  end
+  turn(board)
 end
