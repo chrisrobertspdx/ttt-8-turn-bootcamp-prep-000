@@ -27,7 +27,7 @@ def move(board,index,player="X")
 end
 
 def turn(board)
-  print "Please enter 1-9: "
+  print "Please enter 1-9:"
   the_move = gets.chomp.strip.to_i
 
   #turn(board)
