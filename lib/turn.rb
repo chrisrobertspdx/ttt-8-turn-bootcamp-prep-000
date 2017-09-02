@@ -31,9 +31,11 @@ def turn(board)
   the_move = gets.chomp.strip.to_i
   index = input_to_index(the_move)
   if valid_move?(board,index)
-    puts "valid"
+    puts "Move valid."
+    move(board,index)
+    display_board(board)
   else
-    puts "invalid"
+    puts "Invalid move. Try again."
   end
 
   #turn(board)
