@@ -26,6 +26,8 @@ def move(board,index,player="X")
   board[index] = "#{player}"
 end
 
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+def turn(board)
+  puts "Please enter 1-9:"
+end
 
-puts valid_move?(board,-1)
+
