@@ -29,6 +29,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   the_move = gets.chomp.strip.to_i
+  index = input_to_index(the_move)
 
   #turn(board)
 end
