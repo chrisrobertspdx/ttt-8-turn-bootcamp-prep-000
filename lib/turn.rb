@@ -30,6 +30,11 @@ def turn(board)
   puts "Please enter 1-9:"
   the_move = gets.chomp.strip.to_i
   index = input_to_index(the_move)
+  if valid_move?(board,index)
+    puts "valid"
+  else
+    puts "invalid"
+  end
 
   #turn(board)
 end
